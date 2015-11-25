@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+	<body>
+	<div id="random"></div>
+		<script type="text/javascript">
+			function maximoDeDosNumeros (num1,num2){
+				if (num1>num2) {
+					console.log(num1);
+				}else if (num1==num2){
+					console.log("son iguales");
+				}else{
+					console.log(num2)
+				}
+			}
+			maximoDeDosNumeros(5,5)
+			function maximoDeTresNumeros (num1,num2,num3){
+				if (num1>num2 && num1>num3) {
+					console.log(num1);
+				}else if (num2>num1 && num2>num3) {
+					console.log(num2);
+				}else if (num3>num1 && num3>num2) {
+					console.log(num3);
+				}else if (num1==num2 && num2==num3) {
+					console.log("son iguales");
+				}
+			}
+			maximoDeTresNumeros (5,8,4)
+
+			function esVocal (letra){
+				if (letra=="a" || letra=="e" || letra=="i" || letra=="o" || letra=="i") {
+					console.log("es una vocal");
+				}else{
+					console.log("no es una vocal");
+				}  
+			}
+			
+			esVocal ("a")
+
+			var listaDeNumeros=[2, 4, 6, 8];
+			var suma=0;
+			function sumaDeDigitos (){
+				for(var i=0; i<listaDeNumeros.length;i++){
+					suma=suma+listaDeNumeros[i];
+				}
+				console.log("la suma es: "+suma);
+			}
+
+			sumaDeDigitos()
+
+
+			var listaDeNumeros=[2, 4, 6, 8];
+			var multiplicacion=1;
+			function multiplicacionDeDigitos (){
+				for(var i=0; i<listaDeNumeros.length;i++){
+					multiplicacion=multiplicacion * listaDeNumeros[i];
+				}
+				console.log("la multiplicacion es: "+multiplicacion);
+			}
+
+			multiplicacionDeDigitos()
+
+			function reverso (cadena){
+				console.log(cadena.split("").reverse().toString());
+			}
+			reverso("hearstring love rain loving you a thousand times")
+
+
+			var listaDePalabras=["bride", "of", "the", "century"];
+			var mayor="";
+			
+			function palabrasLargas (palabras){
+				for(var i=0; i<palabras.length;i++){
+					if (palabras[i].length > mayor.length) {
+						mayor=palabras[i];
+					}
+				}
+				console.log("palabra que tiene mayor longitud es: "+ mayor);
+			}
+			palabrasLargas(listaDePalabras)
+ 
+			function esMayor (){
+				var edad = prompt("hola usuario cual  es tu edad");
+				if (edad>=18) {
+					alert("bienvenido usuario eres mayor");
+				}else{
+					alert("usuario no puedes ingresar")
+				}
+			}
+
+			esMayor ()
+			var imagenes=["img/img1.jpg", "img/img2.jpg", "img/img3.jpg"];
+
+			function imagenesVarias (){
+				var num=Math.floor(Math.random()*imagenes.length);
+				var random=document.getElementById("random");
+				random.innerHTML = "<img src=" + imagenes[num] + ">";
+
+				
+			}
+			imagenesVarias(imagenes)
+		</script>
+	</body>
+</html>

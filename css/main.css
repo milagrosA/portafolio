@@ -1,0 +1,100 @@
+
+li{
+	list-style-type:none;
+	display:inline-block;  
+	margin-left:7%;
+	cursor: pointer;
+
+}
+ul{
+	margin-left: 57%;
+    width: 616px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.fondo{
+    background-image: url("../img/portada.png");
+    width: 98%;
+    height: 500px;
+    margin-top: 2%;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    background-position:0 50px;
+    background-repeat: no-repeat;
+
+}
+.imagen{
+    width: 494px;
+    height: 227px;
+    margin-left: 68%;
+    margin-top: 14%;
+}
+h1{
+    margin-top: -10%;
+    margin-left: 21%;
+    font-family: lobster;
+    font-size: 50px;
+    position: absolute;
+}
+@fuentes{
+	font-family: lobster;
+}
+.laboratoria{
+    border-radius: 21px;
+    margin-left: 6%;
+    margin-top: 2%;
+    width: 33%;
+}
+p{
+    width: 65%;
+    margin-left: 39%;
+    margin-top: -22%;
+    padding: 6%;
+}
+.rectangulo{
+    width: 71%;
+    border: 16px solid #DC143C;
+    margin: 3% 16%;
+}
+
+.conocimiento{
+    margin: 1% 44%;
+    font-weight: bolder;
+    font-size: 23px;
+}
+.logo{
+    width: 15%;
+}
+.iconos{
+    margin-left: 6%;
+    margin-top: 1%;
+}
+
+.ico1{
+  width: 18%;
+}
+.ico2{
+    width: 193px;
+    margin-bottom: -23px;
+}
+.ico3{
+    width: 21%;
+    margin-bottom: -11px;
+}
+.ico4{
+     width: 161px;
+}
+.ico5{
+    width: 124px;
+    height: 124px;
+    border-radius: 28px;
+    margin-left: 61px;
+}
+.trabajos{
+     margin: 3% 47%;
+    font-weight: bolder;
+    font-size: 31px;
+}
+
